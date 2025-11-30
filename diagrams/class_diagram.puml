@@ -1,0 +1,65 @@
+@startuml 
+title Library Management System Class Diagram 
+ 
+class Book { 
+  - title: str 
+  - author: str 
+  - isbn: str 
+  - publication_year: int 
+  - is_available: bool 
+  + __init__(title, author, isbn, publication_year) 
+  + __str__(): str 
+  + toggle_availability() 
+  + get_info(): dict 
+} 
+ 
+class User { 
+  - user_id: int 
+  - name: str 
+  - email: str 
+  - borrowed_books: list 
+  + __init__(user_id, name, email) 
+  + __str__(): str 
+  + borrow_book(isbn): bool 
+  + return_book(isbn): bool 
+  + get_borrowed_books(): list 
+  + get_info(): dict 
+} 
+ 
+class Loan { 
+  - loan_id: int 
+  - user_id: int 
+  - book_isbn: str 
+  - borrow_date: datetime 
+  - due_date: datetime 
+  - return_date: datetime 
+  + __init__(loan_id, user_id, book_isbn) 
+  + mark_returned() 
+  + is_overdue(): bool 
+  + get_info(): dict 
+} 
+ 
+class Library { 
+  - books: dict 
+  - users: dict 
+  - loans: list 
+  - next_loan_id: int 
+  + __init__() 
+  + add_book(book): bool 
+  + remove_book(isbn): bool 
+  + register_user(user): bool 
+  + find_book_by_title(title): list 
+  + find_book_by_author(author): list 
+  + borrow_book(user_id, isbn): bool 
+  + return_book(user_id, isbn): bool 
+  + get_available_books(): list 
+  + get_overdue_loans(): list 
+} 
+ 
+Library "1" -- "*" Book : contains 
+Library "1" -- "*" User : manages 
+Library "1" -- "*" Loan : tracks 
+Loan "1" -- "1" User : borrowed by 
+Loan "1" -- "1" Book : refers to 
+ 
+@enduml 

@@ -1,31 +1,19 @@
 class Book: 
-    """Класс, представляющий книгу в библиотечной системе""" 
- 
-    def __init__(self, title: str, author: str, isbn: str, publication_year: int): 
-        Инициализация книги 
- 
-        Args: 
-            title: Название книги 
-            author: Автор книги 
-            isbn: ISBN номер 
-            publication_year: Год публикации 
+    def __init__(self, title, author, isbn, publication_year): 
         self.title = title 
         self.author = author 
         self.isbn = isbn 
         self.publication_year = publication_year 
         self.is_available = True 
  
-    def __str__(self) -
-        """Строковое представление книги""" 
-        status = "доступна" if self.is_available else "выдана" 
+    def __str__(self): 
+        status = "available" if self.is_available else "borrowed" 
         return f"'{self.title}' - {self.author} ({self.publication_year}) - {status}" 
  
-    def toggle_availability(self) -
-        """Изменение статуса доступности книги""" 
+    def toggle_availability(self): 
         self.is_available = not self.is_available 
  
-    def get_info(self) -
-        """Получение информации о книге в виде словаря""" 
+    def get_info(self): 
         return { 
             'title': self.title, 
             'author': self.author, 

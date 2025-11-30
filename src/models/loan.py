@@ -1,16 +1,7 @@
 from datetime import datetime, timedelta 
  
 class Loan: 
-    """Класс, представляющий запись о выдаче книги""" 
- 
-    def __init__(self, loan_id: int, user_id: int, book_isbn: str, borrow_days: int = 14): 
-        Инициализация записи о выдаче 
- 
-        Args: 
-            loan_id: Уникальный идентификатор выдачи 
-            user_id: ID пользователя 
-            book_isbn: ISBN книги 
-            borrow_days: Срок выдачи в днях (по умолчанию 14) 
+    def __init__(self, loan_id, user_id, book_isbn, borrow_days=14): 
         self.loan_id = loan_id 
         self.user_id = user_id 
         self.book_isbn = book_isbn 
@@ -18,18 +9,15 @@ class Loan:
         self.due_date = self.borrow_date + timedelta(days=borrow_days) 
         self.return_date = None 
  
-    def mark_returned(self) -
-        """Отметить книгу как возвращенную""" 
+    def mark_returned(self): 
         self.return_date = datetime.now() 
  
-    def is_overdue(self) -
-        """Проверить, просрочена ли книга""" 
+    def is_overdue(self): 
         if self.return_date: 
             return self.return_date 
         return datetime.now() 
  
-    def get_info(self) -
-        """Получить информацию о выдаче""" 
+    def get_info(self): 
         return { 
             'loan_id': self.loan_id, 
             'user_id': self.user_id, 
