@@ -1,0 +1,3 @@
+# Requirements for Library Management System 
+ 
+# No external dependencies for basic version 
