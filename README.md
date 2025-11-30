@@ -1,0 +1,27 @@
+# Система управления библиотекой 
+ 
+## Описание проекта 
+Проект реализует систему управления библиотекой с использованием ООП на Python. 
+ 
+## Структура проекта 
+ 
+``` 
+library-management-system/ 
+├── src/                    # Исходный код 
+│   ├── models/            # Классы предметной области 
+│   ├── services/          # Бизнес-логика 
+│   └── main.py            # Главный файл приложения 
+├── docs/                  # Документация 
+├── issues/                # Задачи проекта 
+├── tests/                 # Unit-тесты 
+├── diagrams/              # UML диаграммы 
+└── README.md              # Описание проекта 
+``` 
+ 
+## Установка и запуск 
+ 
+```bash 
+git clone https://github.com/0renessans0/library-management-system.git 
+cd library-management-system 
+python src/main.py 
+``` 
