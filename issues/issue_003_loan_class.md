@@ -1,12 +1,12 @@
-# Issue #003: Реализация класса Loan 
+я╗┐# Issue #003: ╤Т╥Р┬а┬л╨Б┬з┬а╨╢╨Б╨┐ ╨Д┬л┬а╨▒╨▒┬а Loan 
  
-## Задача: 
-Реализовать класс Loan для управления выдачей книг 
+## тАб┬а┬д┬а╨╖┬а: 
+╤Т╥Р┬а┬л╨Б┬з┬о╤Ю┬а╨▓╨╝ ╨Д┬л┬а╨▒╨▒ Loan ┬д┬л╨┐ ╨│╨З╨░┬а╤Ю┬л╥Р┬н╨Б╨┐ ╤Ю╨╗┬д┬а╨╖╥Р┬й ╨Д┬н╨Б╨И 
  
-## Требования к классу Loan: 
-- Атрибуты: loan_id, user_id, book_isbn, borrow_date, due_date, return_date 
-- Методы: __init__, mark_returned, is_overdue, get_info 
+## тАЩ╨░╥Р╨О┬о╤Ю┬а┬н╨Б╨┐ ╨Д ╨Д┬л┬а╨▒╨▒╨│ Loan: 
+- ╨В╨▓╨░╨Б╨О╨│╨▓╨╗: loan_id, user_id, book_isbn, borrow_date, due_date, return_date 
+- ╨К╥Р╨▓┬о┬д╨╗: __init__, mark_returned, is_overdue, get_info 
  
-## Критерии выполнения: 
-- [ ] Реализован класс Loan в src/models/loan.py 
-- [ ] Написаны тесты в tests/test_loan.py 
+## ╨Й╨░╨Б╨▓╥Р╨░╨Б╨Б ╤Ю╨╗╨З┬о┬л┬н╥Р┬н╨Б╨┐: 
+- [ ] ╤Т╥Р┬а┬л╨Б┬з┬о╤Ю┬а┬н ╨Д┬л┬а╨▒╨▒ Loan ╤Ю src/models/loan.py 
+- [ ] ╨М┬а╨З╨Б╨▒┬а┬н╨╗ ╨▓╥Р╨▒╨▓╨╗ ╤Ю tests/test_loan.py 

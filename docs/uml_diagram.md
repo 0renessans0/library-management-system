@@ -1,26 +1,26 @@
-# UML Ñ®†£‡†¨¨† ™´†··Æ¢ ·®·‚•¨Î „Ø‡†¢´•≠®Ô °®°´®Æ‚•™Æ© 
- 
-## éØ®·†≠®• §®†£‡†¨¨Î 
- 
-### ä´†·· Book 
-- **Ä‚‡®°„‚Î:** title, author, isbn, publication_year, is_available 
-- **å•‚Æ§Î:** __init__, __str__, toggle_availability, get_info 
- 
-### ä´†·· User 
-- **Ä‚‡®°„‚Î:** user_id, name, email, borrowed_books 
-- **å•‚Æ§Î:** __init__, __str__, borrow_book, return_book, get_borrowed_books, get_info 
- 
-### ä´†·· Loan 
-- **Ä‚‡®°„‚Î:** loan_id, user_id, book_isbn, borrow_date, due_date, return_date 
-- **å•‚Æ§Î:** __init__, mark_returned, is_overdue, get_info 
- 
-### ä´†·· Library 
-- **Ä‚‡®°„‚Î:** books, users, loans, next_loan_id 
-- **å•‚Æ§Î:** add_book, remove_book, register_user, find_book_by_title, find_book_by_author, borrow_book, return_book, get_available_books, get_overdue_loans 
- 
-## é‚≠ÆË•≠®Ô ¨•¶§„ ™´†··†¨® 
-- Library "·Æ§•‡¶®‚" ¨≠Æ¶•·‚¢Æ Book (†£‡•£†Ê®Ô) 
-- Library "·Æ§•‡¶®‚" ¨≠Æ¶•·‚¢Æ User (†£‡•£†Ê®Ô) 
-- Library "·Æ§•‡¶®‚" ¨≠Æ¶•·‚¢Æ Loan (™Æ¨ØÆß®Ê®Ô) 
-- Loan "·¢Ôß†≠" · Æ§≠®¨ User (†··ÆÊ®†Ê®Ô) 
-- Loan "·¢Ôß†≠" · Æ§≠Æ© Book (†··ÆÊ®†Ê®Ô) 
+Ôªø# UML –î–∏–∞–≥—Ä–∞–º–º–∞ –∫–ª–∞—Å—Å–æ–≤ —Å–∏—Å—Ç–µ–º—ã —É–ø—Ä–∞–≤–ª–µ–Ω–∏—è –±–∏–±–ª–∏–æ—Ç–µ–∫–æ–π
+
+## –û–ø–∏—Å–∞–Ω–∏–µ –¥–∏–∞–≥—Ä–∞–º–º—ã
+
+### –ö–ª–∞—Å—Å Book
+- **–ê—Ç—Ä–∏–±—É—Ç—ã:** title, author, isbn, publication_year, is_available
+- **–ú–µ—Ç–æ–¥—ã:** __init__, __str__, toggle_availability, get_info
+
+### –ö–ª–∞—Å—Å User
+- **–ê—Ç—Ä–∏–±—É—Ç—ã:** user_id, name, email, borrowed_books
+- **–ú–µ—Ç–æ–¥—ã:** __init__, __str__, borrow_book, return_book, get_borrowed_books, get_info
+
+### –ö–ª–∞—Å—Å Loan
+- **–ê—Ç—Ä–∏–±—É—Ç—ã:** loan_id, user_id, book_isbn, borrow_date, due_date, return_date
+- **–ú–µ—Ç–æ–¥—ã:** __init__, mark_returned, is_overdue, get_info
+
+### –ö–ª–∞—Å—Å Library
+- **–ê—Ç—Ä–∏–±—É—Ç—ã:** books, users, loans, next_loan_id
+- **–ú–µ—Ç–æ–¥—ã:** add_book, remove_book, register_user, find_book_by_title, find_book_by_author, borrow_book, return_book, get_available_books, get_overdue_loans
+
+## –û—Ç–Ω–æ—à–µ–Ω–∏—è –º–µ–∂–¥—É –∫–ª–∞—Å—Å–∞–º–∏
+- Library "—Å–æ–¥–µ—Ä–∂–∏—Ç" –º–Ω–æ–∂–µ—Å—Ç–≤–æ Book (–∞–≥—Ä–µ–≥–∞—Ü–∏—è)
+- Library "—Å–æ–¥–µ—Ä–∂–∏—Ç" –º–Ω–æ–∂–µ—Å—Ç–≤–æ User (–∞–≥—Ä–µ–≥–∞—Ü–∏—è)
+- Library "—Å–æ–¥–µ—Ä–∂–∏—Ç" –º–Ω–æ–∂–µ—Å—Ç–≤–æ Loan (–∫–æ–º–ø–æ–∑–∏—Ü–∏—è)
+- Loan "—Å–≤—è–∑–∞–Ω" —Å –æ–¥–Ω–∏–º User (–∞—Å—Å–æ—Ü–∏–∞—Ü–∏—è)
+- Loan "—Å–≤—è–∑–∞–Ω" —Å –æ–¥–Ω–æ–π Book (–∞—Å—Å–æ—Ü–∏–∞—Ü–∏—è)

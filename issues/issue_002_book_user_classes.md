@@ -1,17 +1,17 @@
-# Issue #002: Реализация классов Book и User 
+я╗┐# Issue #002: ╤Т╥Р┬а┬л╨Б┬з┬а╨╢╨Б╨┐ ╨Д┬л┬а╨▒╨▒┬о╤Ю Book ╨Б User 
  
-## Задача: 
-Реализовать базовые классы Book и User 
+## тАб┬а┬д┬а╨╖┬а: 
+╤Т╥Р┬а┬л╨Б┬з┬о╤Ю┬а╨▓╨╝ ╨О┬а┬з┬о╤Ю╨╗╥Р ╨Д┬л┬а╨▒╨▒╨╗ Book ╨Б User 
  
-## Требования к классу Book: 
-- Атрибуты: title, author, isbn, publication_year, is_available 
-- Методы: __init__, __str__, toggle_availability, get_info 
+## тАЩ╨░╥Р╨О┬о╤Ю┬а┬н╨Б╨┐ ╨Д ╨Д┬л┬а╨▒╨▒╨│ Book: 
+- ╨В╨▓╨░╨Б╨О╨│╨▓╨╗: title, author, isbn, publication_year, is_available 
+- ╨К╥Р╨▓┬о┬д╨╗: __init__, __str__, toggle_availability, get_info 
  
-## Требования к классу User: 
-- Атрибуты: user_id, name, email, borrowed_books 
-- Методы: __init__, __str__, borrow_book, return_book, get_borrowed_books 
+## тАЩ╨░╥Р╨О┬о╤Ю┬а┬н╨Б╨┐ ╨Д ╨Д┬л┬а╨▒╨▒╨│ User: 
+- ╨В╨▓╨░╨Б╨О╨│╨▓╨╗: user_id, name, email, borrowed_books 
+- ╨К╥Р╨▓┬о┬д╨╗: __init__, __str__, borrow_book, return_book, get_borrowed_books 
  
-## Критерии выполнения: 
-- [ ] Реализован класс Book в src/models/book.py 
-- [ ] Реализован класс User в src/models/user.py 
-- [ ] Написаны тесты в tests/test_book.py и tests/test_user.py 
+## ╨Й╨░╨Б╨▓╥Р╨░╨Б╨Б ╤Ю╨╗╨З┬о┬л┬н╥Р┬н╨Б╨┐: 
+- [ ] ╤Т╥Р┬а┬л╨Б┬з┬о╤Ю┬а┬н ╨Д┬л┬а╨▒╨▒ Book ╤Ю src/models/book.py 
+- [ ] ╤Т╥Р┬а┬л╨Б┬з┬о╤Ю┬а┬н ╨Д┬л┬а╨▒╨▒ User ╤Ю src/models/user.py 
+- [ ] ╨М┬а╨З╨Б╨▒┬а┬н╨╗ ╨▓╥Р╨▒╨▓╨╗ ╤Ю tests/test_book.py ╨Б tests/test_user.py 
